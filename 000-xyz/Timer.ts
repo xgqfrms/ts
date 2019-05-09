@@ -46,4 +46,5 @@ export default TS_Timer;
 
 export {
     TS_Timer,
+    Timers,
 };
