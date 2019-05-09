@@ -106,7 +106,16 @@ let user = new Student("Jane", "M.", "User");
 document.body.innerHTML = greeter(user);
 
 ```
-### XYZ
+### docs
+
+
+https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-0.html
+
+https://www.typescriptlang.org/docs/handbook/basic-types.html
+
+https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html
+
+
 
 ```ts
 
