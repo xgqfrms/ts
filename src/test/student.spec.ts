@@ -28,6 +28,8 @@ log(student.firstName);
 log(student.middleInitial);
 log(student.lastName);
 
+log(student.fullName);
+
 log(sayHello(student));
 
 // document.body.innerHTML = sayHello(student);

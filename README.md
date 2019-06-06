@@ -143,4 +143,80 @@ $ tsc
 
 # testing
 $ cd built/test && node student.spec.js
+
+$ cd ../../
+
+$ tsc --pretty
+```
+
+noImplicitReturns
+noFallthroughCasesInSwitch
+
+allowUnreachableCode
+allowUnusedLabels
+
+noEmitOnError
+
+noImplicitAny
+
+http://www.typescriptlang.org/docs/handbook/migrating-from-javascript.html#getting-stricter-checks
+
+## webapck
+
+```sh
+$ npm i -D awesome-typescript-loader source-map-loader
+
+```
+
+http://www.typescriptlang.org/docs/handbook/react-&-webpack.html
+
+https://github.com/TypeStrong/ts-loader
+
+https://github.com/s-panferov/awesome-typescript-loader#differences-between-ts-loader
+
+http://www.typescriptlang.org/play/index.html
+
+> .tsignore
+
+https://github.com/Microsoft/TypeScript/issues/19573
+
+## module type
+
+> "commonjs", "amd", "umd", "system", "es6", "es2015", "esnext", "none"
+
+* commonjs, amd, system, umd
+
+```js
+// For Node/CommonJS
+declare function require(path: string): any;
+
+// For RequireJS/AMD
+declare function define(...args: any[]): any;
+
+```
+
+```js
+// Node/CommonJS
+
+var foo = require("foo");
+foo.doStuff();
+
+// RequireJS/AMD
+
+define(["foo"], function(foo) {
+    foo.doStuff();
+})
+
+// TypeScript
+
+import foo = require("foo");
+foo.doStuff();
+
+```
+
+## Getting Declaration Files
+
+```sh
+$ npm install -S @types/lodash
+
 ```

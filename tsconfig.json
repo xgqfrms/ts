@@ -2,9 +2,15 @@
     "compilerOptions": {
         "outDir": "./built",
         "allowJs": true,
-        "target": "es5"
+        "target": "es5",
+        "sourceMap": false,
+        "module": "umd"
     },
     "include": [
         "./src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "./built/**/*.spec.ts"
     ]
 }
