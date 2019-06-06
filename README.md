@@ -220,3 +220,11 @@ foo.doStuff();
 $ npm install -S @types/lodash
 
 ```
+
+## tsconfig.json
+
+https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
+
+http://json.schemastore.org/tsconfig
+
+

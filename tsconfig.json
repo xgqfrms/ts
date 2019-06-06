@@ -4,8 +4,10 @@
         "allowJs": true,
         "target": "es5",
         "sourceMap": false,
-        "module": "umd"
+        "module": "umd",
+        "noImplicitAny" : true
     },
+    "compileOnSave": true,
     "include": [
         "./src/**/*"
     ],
