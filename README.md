@@ -120,13 +120,27 @@ https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html
 ```ts
 
 ```
-### XYZ
+###
 
 ```ts
 
 ```
-### XYZ
+###
 
 ```ts
 
+```
+
+## JS to TS
+
+http://www.typescriptlang.org/docs/handbook/migrating-from-javascript.html
+
+https://github.com/Microsoft/TypeScript-React-Conversion-Guide#typescript-react-conversion-guide
+
+```sh
+# build
+$ tsc
+
+# testing
+$ cd built/test && node student.spec.js
 ```
