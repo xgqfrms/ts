@@ -228,3 +228,12 @@ https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
 http://json.schemastore.org/tsconfig
 
 
+## react & webpack
+
+http://www.typescriptlang.org/docs/handbook/react-&-webpack.html
+
+> typescript 3.x.x
+
+http://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-4.html
+
+
