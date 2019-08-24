@@ -1,6 +1,6 @@
 # ts
 
-> TypeScript 是一个可以编译成简洁JavaScript的JavaScript超集！
+> TypeScript 是一个可以编译成简洁 JavaScript的 JavaScript超集！
 
 
 ## install
@@ -10,7 +10,8 @@
 $ npm i -g typescript
 
 $ tsc -v
-# Version 3.4.5
+# old Version 3.4.5
+# Version 3.5.3
 
 ```
 
@@ -106,6 +107,7 @@ let user = new Student("Jane", "M.", "User");
 document.body.innerHTML = greeter(user);
 
 ```
+
 ### docs
 
 
@@ -120,6 +122,7 @@ https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html
 ```ts
 
 ```
+
 ###
 
 ```ts
@@ -161,7 +164,7 @@ noImplicitAny
 
 http://www.typescriptlang.org/docs/handbook/migrating-from-javascript.html#getting-stricter-checks
 
-## webapck
+## webpack & code splitting
 
 ```sh
 $ npm i -D awesome-typescript-loader source-map-loader
