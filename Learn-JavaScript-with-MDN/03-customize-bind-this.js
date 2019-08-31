@@ -39,6 +39,7 @@ Function.prototype.customizeBind = function() {
     let func = this;
     let _this = arguments[0];
     // arguments is array-like, not an array!
+    // let args = Array.prototype.slice.apply(arguments,[1]);
     let args = [...arguments].slice(1);
     // log(`func =`, func);
     // log(`_this =`, _this);
