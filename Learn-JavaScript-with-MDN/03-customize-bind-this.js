@@ -20,30 +20,33 @@ let log = console.log;
 let obj = {
     x: 42,
     getX: function() {
+        log(`this =`, this);
+        log(`obj.x =`, obj.x);
         return this.x;
     }
 };
 
 // The function gets invoked at the global scope
 let unboundGetX = obj.getX;
-log(unboundGetX());
+// log(unboundGetX());
 // undefined
 
 let boundGetX = unboundGetX.bind(obj);
-log(boundGetX());
+// log(boundGetX());
 // 42
 
 Function.prototype.customizeBind = function() {
     let func = this;
     let _this = arguments[0];
-    let args = slice(arguments, 1);
-    log(`func =`, func);
-    log(`_this =`, _this);
-    log(`args =`, args);
-    if (typeof thatFunc !== 'function') {
+    // arguments is array-like, not an array!
+    let args = [...arguments].slice(1);
+    // log(`func =`, func);
+    // log(`_this =`, _this);
+    // log(`args =`, args);
+    if (typeof func === "function") {
         return function() {
-            let allArgs = args.concat(slice(arguments));
-            log(`allArgs =`, allArgs);
+            let allArgs = args.concat([...arguments].slice(0));
+            // log(`allArgs =`, allArgs);
             return func.apply(_this, allArgs);
         };
     } else {
