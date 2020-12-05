@@ -18,7 +18,7 @@ import {
     Student,
     sayHello,
     // Person,
-} from "../student";
+} from "../src/student";
 
 let log = console.log;
 
